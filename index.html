@@ -126,16 +126,31 @@ excellent customer service.
 <section id="menu-section">
 
 <h2 class="heading">
-
-Our Featured Meals
-
+Our Menu
 </h2>
 
-<div class="food-grid">
+<p class="menu-subtitle">
+Choose from our delicious Meals or freshly baked Pastries.
+</p>
 
+<div class="menu-filter">
+
+<button class="filter-btn active"
+onclick="showCategory('meals', event)">
+ Meals
+</button>
+
+<button class="filter-btn"
+onclick="showCategory('pastries', event)">
+ Pastries
+</button>
+
+</div>
+
+<div class="food-grid">
 <!-- Card -->
 
-<div class="food-card">
+<div class="food-card meals">
 
 <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/c10a915a18d79d07ec38c572561a92ed43f6d7c4/images%20(2).jpeg">
 
@@ -155,7 +170,7 @@ Fresh pap served with crispy akara.
 
 <!-- Card -->
 
-<div class="food-card">
+<div class="food-card meals">
 
 <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/d4f001a0fe5509b5014d62d1b4c94148fceaf161/images%20(6).jpeg">
 
@@ -175,7 +190,7 @@ Rich egusi soup served with pounded yam.
 
 <!-- Card -->
 
-<div class="food-card">
+<div class="food-card meals">
 
 <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/0d703d3c6c5ae8460f602563911853fecced9447/images%20(9).jpeg">
 
@@ -194,10 +209,75 @@ A satisfying plate of steamed rice paired with our signature chicken sauce, fres
 </a>
 
 </div>
+<!-- ===========================
+     JOLLOF RICE
+=========================== -->
+
+<div class="food-card meals">
+
+    <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/321b350d442cfa7c3162fa756693f4b86572674c/360_F_1292814964_cINtJDBFzTcfhlSAKtprK3erb0ltmRSM.jpg" alt="Jollof Rice">
+
+    <h3>Jollof Rice</h3>
+
+    <p>
+        Smoky Nigerian jollof rice served with juicy grilled chicken and fresh salad.
+    </p>
+
+    <a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Jollof%20Rice."
+       class="order-btn"
+       target="_blank">
+        Order Now
+    </a>
+
+</div>
+
+<!-- ===========================
+     FRIED RICE
+=========================== -->
+
+<div class="food-card meals">
+
+    <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/89e111494e1b616b1be3d5390829ff550403a562/Nigerian-fried-rice-recipe-main-photo-3.jpg" alt="Fried Rice">
+
+    <h3>Fried Rice</h3>
+
+    <p>
+        Delicious fried rice cooked with fresh vegetables and served with tender chicken.
+    </p>
+
+    <a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Fried%20Rice."
+       class="order-btn"
+       target="_blank">
+        Order Now
+    </a>
+
+</div>
+
+<!-- ===========================
+     YAM & EGG SAUCE
+=========================== -->
+
+<div class="food-card meals">
+
+    <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/a359569af90a7df45f4488b79aefc7c3b4719ffd/images%20(33).jpeg" alt="Yam & Egg Sauce">
+
+    <h3>Yam & Egg Sauce</h3>
+
+    <p>
+        Soft boiled yam served with rich egg sauce made from fresh tomatoes, peppers and onions.
+    </p>
+
+    <a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Yam%20%26%20Egg%20Sauce."
+       class="order-btn"
+       target="_blank">
+        Order Now
+    </a>
+
+</div>
 
 <!-- Card -->
 
-<div class="food-card">
+<div class="food-card meals">
 
 <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/586de49b0a48a423e787c1f231834519315da6b4/images%20(11).jpeg">
 
@@ -217,7 +297,7 @@ Soft cooked beans with fresh ingredients.
 
 <!-- Card -->
 
-<div class="food-card">
+<div class="food-card meals">
     
 <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/953064c8f18abb31f753c8f54a215f5ecea486e4/5B2FJVLRJOOB3XCM5CD5TCO5.jpeg">
 
@@ -237,7 +317,7 @@ Sweet fried plantain with grilled chicken.
 
 <!-- Card -->
 
-<div class="food-card">
+<div class="food-card meals">
     <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/37e768bc2356a52f9067473ffd98f9cf6480f7ae/images%20(12).jpeg">
 
 <h3>Eba & Chicken Stew</h3>
@@ -256,7 +336,7 @@ Fresh eba served with delicious chicken stew.
 
 <!-- Card -->
 
-<div class="food-card">
+<div class="food-card meals">
     <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/38fef65e87475920c2d019bbc821680ff13e14d4/images%20(13).jpeg">
 
 <h3>Vegetable Soup</h3>
@@ -275,14 +355,14 @@ Healthy vegetable soup with assorted meat.
 
 <!-- Card -->
 
-<div class="food-card">
-    <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/807ea3e7746ac7ef1fb1e120c7dd9025984b470f/images%20(16).jpeg">
+<div class="food-card meals">
+    <img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/029741587bb8f18c14f8777403b66d3556a0facf/images%20(40).jpeg">
 
-<h3> Noodles</h3>
+<h3> Spaghetti</h3>
 
 <p>
 
-Stir fried noodles with vegetables and chicken.
+Delicious spaghetti with vegetables,chicken, eggs,beef and turkey.
 
 </p>
 
@@ -292,9 +372,325 @@ Stir fried noodles with vegetables and chicken.
 
 </div>
 
+<!-- Oha Soup -->
+
+<div class="food-card meals">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/99066b431628fc90894fd8859652758b6bccf085/e9736ac4-2b85-4056-a0b5-57b4d41958bb.png" alt="Oha Soup">
+
+<h3>Oha Soup</h3>
+
+<p>
+Traditional Oha soup prepared with fresh leaves, assorted meat and rich local spices.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Oha%20Soup."
+class="order-btn"
+target="_blank">
+
+Order Now
+
+</a>
+
 </div>
 
+<!-- Onugbu Soup -->
+
+<div class="food-card meals">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/2983ffb4306138e7b8d08bda2569a7c62c10b3e2/images%20(26).jpeg" alt="Onugbu Soup">
+
+<h3>Onugbu Soup</h3>
+
+<p>
+Rich bitterleaf soup cooked with assorted meat, stockfish and traditional ingredients.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Onugbu%20Soup."
+class="order-btn"
+target="_blank">
+
+Order Now
+
+</a>
+
+</div>
+
+<!-- Fisherman Soup -->
+
+<div class="food-card meals">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/bad6b3eb610e9a9c688203739fd706efd2aeb1f2/images%20(27).jpeg" alt="Fisherman Soup">
+
+<h3>Fisherman Soup</h3>
+
+<p>
+Loaded with fresh fish, prawns, crab and seafood in a rich spicy broth.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Fisherman%20Soup."
+class="order-btn"
+target="_blank">
+
+Order Now
+
+</a>
+
+</div>
+
+<!-- Ogbono Soup -->
+
+<div class="food-card meals">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/4da02129fb2ec9a04ac21c1bbbb88522227df50a/images%20(29).jpeg" alt="Ogbono Soup">
+
+<h3>Ogbono Soup</h3>
+
+<p>
+Smooth and delicious Ogbono soup prepared with assorted meat and fresh ingredients.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Ogbono%20Soup."
+class="order-btn"
+target="_blank">
+
+Order Now
+
+</a>
+
+</div>
+
+<!-- Okro Soup -->
+
+<div class="food-card meals">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/d0195c7bce463f3e15527d30487eadb259f6f0e4/Okra-Fufu-11.jpeg" alt="Okro Soup">
+
+<h3>Okro Soup</h3>
+
+<p>
+Fresh okra soup cooked with seafood, assorted meat and traditional spices.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Okro%20Soup."
+class="order-btn"
+target="_blank">
+
+Order Now
+
+</a>
+
+</div>
+
+<!-- Afang Soup -->
+
+<div class="food-card meals">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/572f81a24c73d01ac0f122a6c681680eb5a63bdf/hqdefault.jpg" alt="Afang Soup">
+
+<h3>Afang Soup</h3>
+
+<p>
+A rich Afang soup made with fresh vegetables, assorted meat and traditional seasoning.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Afang%20Soup."
+class="order-btn"
+target="_blank">
+
+Order Now
+
+</a>
+
+</div>
+<!-- ===========================
+     PASTRIES
+=========================== -->
+
+<!-- Burger -->
+
+<div class="food-card pastries">
+
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=80" alt="Burger">
+
+<h3>Burger</h3>
+
+<p>
+Juicy beef burger served with fresh vegetables and our signature sauce.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Burger."
+class="order-btn"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+<!-- Meat Pie -->
+
+<div class="food-card pastries">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/d95450d888e856ba69e1c0792ec31f71ba18e888/images%20(34).jpeg" alt="Meat Pie">
+
+<h3>Meat Pie</h3>
+
+<p>
+Freshly baked meat pie with a delicious minced meat filling.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Meat%20Pie."
+class="order-btn"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+<!-- Chicken Pie -->
+
+<div class="food-card pastries">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/2ad092ffdd809e6696cd260aeb531c88b8a5cca7/images%20(35).jpeg" alt="Chicken Pie">
+
+<h3>Chicken Pie</h3>
+
+<p>
+Golden baked chicken pie filled with tender seasoned chicken.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Chicken%20Pie."
+class="order-btn"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+<!-- Shawarma -->
+
+<div class="food-card pastries">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/2ad092ffdd809e6696cd260aeb531c88b8a5cca7/images%20(36).jpeg" alt="Shawarma">
+
+<h3>Shawarma</h3>
+
+<p>
+Creamy chicken shawarma wrapped with fresh vegetables and sauce.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Shawarma."
+class="order-btn"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+<!-- Milky Doughnut -->
+
+<div class="food-card pastries">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/34e000fa5d96639880ca0b4f837295927c4ddf0a/images%20(37).jpeg" alt="Milky Doughnut">
+
+<h3>Milky Doughnut</h3>
+
+<p>
+Soft and fluffy doughnut finished with sweet creamy glaze.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Milky%20Doughnut."
+class="order-btn"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+<!-- Super Roll -->
+
+<div class="food-card pastries">
+
+<img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=800&auto=format&fit=crop&q=80" alt="Super Roll">
+
+<h3>Super Roll</h3>
+
+<p>
+Freshly baked soft super roll perfect for breakfast or snacks.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Super%20Roll."
+class="order-btn"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+<!-- Bread -->
+
+<div class="food-card pastries">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/097dc862db5f398152fe1a81d1d51375fcd759a3/images%20(38).jpeg" alt="Bread">
+
+<h3>Bread</h3>
+
+<p>
+Freshly baked bread with a soft texture and rich homemade taste.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Bread."
+class="order-btn"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+<!-- Fish Pie -->
+
+<div class="food-card pastries">
+
+<img src="https://raw.githubusercontent.com/Ikenga4y/Pink-rose/ecf621a1cd4aff6d7bac0ca777ab889454f2fcc3/images%20(39).jpeg" alt="Fish Pie">
+
+<h3>Fish Pie</h3>
+
+<p>
+Delicious fish pie packed with fresh fish and tasty seasonings.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Fish%20Pie."
+class="order-btn"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+<!-- Pizza -->
+
+<div class="food-card pastries">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=80" alt="Pizza">
+
+<h3>Pizza</h3>
+
+<p>
+Hot oven-baked pizza loaded with cheese and delicious toppings.
+</p>
+
+<a href="https://wa.me/2347019334370?text=Hello%20Upper%20Range%20Kitchen,%20I'd%20like%20to%20order%20Pizza."
+class="order-btn"
+target="_blank">
+Order Now
+</a>
+</div>
+
+</div>
+
+
 </section>
+
 <!-- ===========================
      SERVICES
 =========================== -->
@@ -401,14 +797,24 @@ Chat With Us
 <h3>Follow Us</h3>
 
 <div class="social-links">
+    
+<a href="https://www.facebook.com/profile.php?id=61591858392941&mibextid=ZbWKwL"
+   target="_blank"
+   title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+</a>
 
-<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="https://instagram.com/upperrangekitchen"
+   target="_blank"
+   title="Instagram">
+    <i class="fab fa-instagram"></i>
+</a>
 
-<a href="#"><i class="fab fa-tiktok"></i></a>
-
-<a href="https://wa.me/2347019334370">
-
-<i class="fab fa-whatsapp"></i>
+<a href="https://vm.tiktok.com/ZS9rUoGsR4GEa-inbGB/"
+   target="_blank"
+   title="TikTok">
+    <i class="fab fa-tiktok"></i>
+</a>
 
 </a>
 
@@ -558,9 +964,46 @@ btn.style.transform="scale(1)";
 });
 
 });
+/* ===========================
+   MENU FILTER
+=========================== */
+
+function showCategory(category, event){
+
+    const cards = document.querySelectorAll(".food-card");
+
+    cards.forEach(card=>{
+
+        if(card.classList.contains(category)){
+            card.style.display="block";
+        }else{
+            card.style.display="none";
+        }
+
+    });
+
+    document.querySelectorAll(".filter-btn").forEach(btn=>{
+        btn.classList.remove("active");
+    });
+
+    event.target.classList.add("active");
+
+}
+
+/* Show Meals by default */
+
+window.addEventListener("load",()=>{
+
+    const firstButton=document.querySelector(".filter-btn");
+
+    if(firstButton){
+        firstButton.click();
+    }
+
+});
 
 </script>
 
 </body>
 
-</html>
+    </html>
