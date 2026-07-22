@@ -367,157 +367,6 @@ opacity:1;
     background:#f4f7fb;
 }
 
-.food-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:35px;
-    margin-top:50px;
-}
-
-.food-card{
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-    transition:.4s;
-    position:relative;
-}
-
-.food-card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 25px 50px rgba(0,0,0,.18);
-}
-
-.food-card img{
-    width:100%;
-    height:230px;
-    object-fit:cover;
-    transition:.5s;
-}
-
-.food-card:hover img{
-    transform:scale(1.08);
-}
-
-.food-card h3{
-    color:#0d3b8f;
-    font-size:24px;
-    margin:20px 20px 10px;
-    font-family:'Playfair Display',serif;
-}
-
-.food-card p{
-    color:#666;
-    line-height:1.7;
-    margin:0 20px 20px;
-}
-
-.food-card .order-btn{
-    display:inline-block;
-    margin:0 20px 25px;
-    padding:12px 30px;
-    border:none;
-    border-radius:30px;
-    background:#0d3b8f;
-    color:#fff;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
-
-.food-card .order-btn:hover{
-    background:#d4af37;
-    transform:scale(1.05);
-}
-
-/* Premium badge */
-
-.food-card::before{
-    content:"Popular";
-    position:absolute;
-    top:15px;
-    right:-35px;
-    background:#d4af37;
-    color:#fff;
-    padding:8px 40px;
-    transform:rotate(45deg);
-    font-size:12px;
-    font-weight:600;
-}
-
-/* ===================================
-   SERVICES
-=================================== */
-
-#services{
-    background:#fff;
-}
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:35px;
-    margin-top:50px;
-}
-
-.service{
-    background:white;
-    padding:45px 30px;
-    text-align:center;
-    border-radius:20px;
-    transition:.4s;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-}
-
-.service:hover{
-    transform:translateY(-10px);
-    background:#0d3b8f;
-    color:white;
-}
-
-.service i{
-    font-size:55px;
-    color:#d4af37;
-    margin-bottom:20px;
-    transition:.4s;
-}
-
-.service:hover i{
-    transform:rotate(360deg);
-    color:white;
-}
-
-.service h3{
-    font-size:24px;
-}
-
-/* ===================================
-   GALLERY
-=================================== */
-
-#gallery{
-    background:#f8f8f8;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-    margin-top:50px;
-}
-
-.gallery img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-    border-radius:20px;
-    cursor:pointer;
-    transition:.5s;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-#menu-section{
-    background:#f4f7fb;
-}
-
 .menu-subtitle{
     text-align:center;
     color:#666;
@@ -635,7 +484,125 @@ opacity:1;
     transform:rotate(45deg);
     font-size:12px;
     font-weight:600;
-   }
+}
+/* ===================================
+   SERVICES
+=================================== */
+
+#services{
+    background:#fff;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+    margin-top:50px;
+}
+
+.service{
+    background:white;
+    padding:45px 30px;
+    text-align:center;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.service:hover{
+    transform:translateY(-10px);
+    background:#0d3b8f;
+    color:white;
+}
+
+.service i{
+    font-size:55px;
+    color:#d4af37;
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.service:hover i{
+    transform:rotate(360deg);
+    color:white;
+}
+
+.service h3{
+    font-size:24px;
+}
+
+/* ===================================
+   GALLERY
+=================================== */
+
+#gallery{
+    background:#f8f8f8;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.gallery img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.5s;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.gallery img:hover{
+    transform:scale(1.06) rotate(2deg);
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+/* ===================================
+   IMAGE HOVER OVERLAY EFFECT
+=================================== */
+
+.gallery img{
+    position:relative;
+    overflow:hidden;
+}
+
+/* ===================================
+   FOOD CARD FADE IN
+=================================== */
+
+.food-card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ===================================
+   HOVER GLOW
+=================================== */
+
+.food-card:hover,
+.service:hover{
+    box-shadow:
+    0 0 15px rgba(13,59,143,.3),
+    0 0 30px rgba(212,175,55,.25);
+}
+
 /* ===================================
    SECTION DIVIDER
 =================================== */
@@ -900,11 +867,11 @@ button,
     }
 
     .food-card img{
-        height:220px;
+        height:230px;
     }
 
     .gallery img{
-        height:220px;
+        height:280px;
     }
 
     .contact-box{
