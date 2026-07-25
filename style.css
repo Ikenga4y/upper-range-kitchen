@@ -1406,3 +1406,93 @@ button,
     color:#fff;
 
    }
+
+   /* Small Desktop */
+@media (min-width:992px) and (max-width:1199px){
+
+#clearCart,
+#whatsappOrder{
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:35px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+    
+    margin-bottom:100px;
+}
+
+#clearCart{
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    margin-bottom:30px;
+}
+
+}
+
+/* Standard Desktop */
+@media (min-width:1200px) and (max-width:1439px){
+
+#clearCart,
+#whatsappOrder{
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:35px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+    
+    margin-bottom:100px;
+}
+
+#clearCart{
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    margin-bottom:30px;
+}
+
+}
+
+/* Large Desktop */
+@media (min-width:1440px){
+
+#clearCart,
+#whatsappOrder{
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:35px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+    
+    margin-bottom:100px;
+}
+
+#clearCart{
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    margin-bottom:30px;
+}
+
+}
