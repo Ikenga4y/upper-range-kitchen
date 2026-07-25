@@ -1332,7 +1332,7 @@ button,
 
     transition:.3s;
     
-    margin-bottom:50px;
+    margin-bottom:100px;
 }
 
 #clearCart{
@@ -1406,37 +1406,3 @@ button,
     color:#fff;
 
    }
-   /* ==========================
-   Desktop View
-========================== */
-
-@media (min-width:992px){
-
-    #clearCart,
-    #whatsappOrder{
-
-        width:100%;
-
-        padding:18px;
-
-        border:none;
-
-        border-radius:35px;
-
-        font-size:18px;
-
-        cursor:pointer;
-
-        transition:.3s;
-
-        margin-bottom:15px;
-
-    }
-
-    #whatsappOrder{
-
-        margin-bottom:100px;
-
-    }
-
-}
